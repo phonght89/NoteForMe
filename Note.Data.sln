@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Note.Data", "Note.Data\Note.Data.csproj", "{9B73B52A-146D-4D7E-8B73-8FBB0AE06EF0}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Note.Service(1)", "http://localhost:21289", "{0C684684-240E-4C09-804C-7946F38B5F08}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Note.Service", "http://localhost:21289", "{0C684684-240E-4C09-804C-7946F38B5F08}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
@@ -28,6 +28,11 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Note.Service(1)", "http://l
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Note.App", "Note.App\Note.App.csproj", "{6E35E06F-DC36-4889-95C9-4C906F1B4D88}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0C684684-240E-4C09-804C-7946F38B5F08} = {0C684684-240E-4C09-804C-7946F38B5F08}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +47,10 @@ Global
 		{0C684684-240E-4C09-804C-7946F38B5F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C684684-240E-4C09-804C-7946F38B5F08}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{0C684684-240E-4C09-804C-7946F38B5F08}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6E35E06F-DC36-4889-95C9-4C906F1B4D88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E35E06F-DC36-4889-95C9-4C906F1B4D88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E35E06F-DC36-4889-95C9-4C906F1B4D88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E35E06F-DC36-4889-95C9-4C906F1B4D88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
